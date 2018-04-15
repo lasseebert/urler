@@ -1,4 +1,4 @@
-defmodule Urler.MixProject do
+defmodule UrlerUmbrella.MixProject do
   use Mix.Project
 
   def project do
