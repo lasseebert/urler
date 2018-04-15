@@ -6,7 +6,7 @@ defmodule Urler.Store do
   use GenServer
 
   @type value :: String.t()
-  @type id :: pos_integer
+  @type id :: non_neg_integer
 
   @name __MODULE__
 
@@ -33,7 +33,7 @@ defmodule Urler.Store do
 
   def init(:ok) do
     state = %{
-      next_id: 1,
+      next_id: 0,
       repo: %{}
     }
 
