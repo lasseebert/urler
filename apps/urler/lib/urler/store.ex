@@ -10,6 +10,13 @@ defmodule Urler.Store do
 
   @name __MODULE__
 
+  def child_spec([]) do
+    %{
+      id: __MODULE__,
+      start: {__MODULE__, :start_link, []}
+    }
+  end
+
   def start_link do
     GenServer.start_link(__MODULE__, :ok, name: @name)
   end
