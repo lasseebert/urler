@@ -26,7 +26,9 @@ defmodule UrlerWeb.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:ace, "~> 0.15"}
+      {:ace, "~> 0.15"},
+      {:poison, "~> 3.1"},
+      {:urler, in_umbrella: true}
     ]
   end
 end
